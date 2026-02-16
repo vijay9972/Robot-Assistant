@@ -1,3 +1,4 @@
+cat <<EOF > .github/workflows/hello-ci.yml
 name: Greeting Workflow
 on: [push]
 
@@ -13,3 +14,5 @@ jobs:
 
       - name: Run Python Tests
         run: python3 test_calc.py
+EOF
+
